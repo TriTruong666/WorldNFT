@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: var(--primary-color);
+  outline: none;
+}
+
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #671AE4;
+  --btn-primary: linear-gradient(80deg, #B75CFF, #671AE4);
+}
+
+body {
+  width: 100vw;
+  background: linear-gradient(80deg, #53225E, #080F3C);
+  overflow-x: hidden;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+#root {
+  min-height: 100vh;
+}

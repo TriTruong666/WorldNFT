@@ -1,0 +1,70 @@
+@import 'index.css';
+@import 'mixin';
+@import 'variable';
+.navbar-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+
+    .navbar {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header-text {
+            display: flex;
+
+            h2 {
+                font-family: $header-font;
+                font-size: 2.25rem;
+            }
+
+            h2:nth-child(2) {
+                color: var(--secondary-color);
+
+            }
+        }
+
+        .search-box {
+            margin-left: 8rem;
+            width: 30%;
+            padding: 10px 0;
+            background: $light-grey;
+            border-radius: 15px;
+
+            div {
+                margin-left: 1rem;
+                display: flex;
+                gap: 1rem;
+
+                input {
+                    width: 80%;
+                    padding: 5px 0;
+                    border: none;
+                    background-color: transparent;
+                    font-family: $nav-font;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .nav-list {
+            width: 40%;
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+            justify-content: end;
+            li:nth-child(4) {
+                @include buttonPrimary();
+            }
+
+            li {
+                font-family: $nav-font;
+                cursor: pointer;
+            }
+        }
+    }
+}

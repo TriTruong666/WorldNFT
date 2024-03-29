@@ -1,0 +1,16 @@
+@import 'index.css';
+@import 'variable';
+@mixin buttonPrimary {
+    border-radius: 10px;
+    background: $button_primary;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+@mixin norButton{
+    border-radius: 10px;
+    background: $light-grey;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
